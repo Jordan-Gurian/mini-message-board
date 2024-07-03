@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  article 
+    each val in messages
+      p #{val.user} 
+      p #{val.text} 
+      p #{val.added} 
+    a(href="/new") Add Message

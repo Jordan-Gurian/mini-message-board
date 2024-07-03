@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  <form method="POST" action="/new">
+    <input name='name' type='text' maxLength=20 placeholder='Name'>
+    <input name='messageBody' type='text' maxLength=200 placeholder='type your message here...'>
+    <button type='submit'>Submit</button>
+  </form>
